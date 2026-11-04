@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <title>Questionario per chi vende su Vinted</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <h1 class="title">Questionario per chi vende su Vinted</h1>
+      <p class="subtitle">2–3 minuti, anonimo. Grazie per l'aiuto!</p>
+      <div class="progress" id="progress" aria-hidden="false">
+        <div class="progress-label" id="progress-label">Sezione 1 di 5 · Chi sei</div>
+        <div class="progress-track"><div class="progress-bar" id="progress-bar"></div></div>
+      </div>
+      <p class="test-banner" id="test-banner" hidden>Modalità prova: l'indirizzo dello script non è ancora inserito, le risposte non vengono salvate.</p>
+    </header>
+
+    <form id="form" novalidate>
+      <!-- Campo trappola contro i bot: le persone non lo vedono -->
+      <div class="hp" aria-hidden="true">
+        <label>Non compilare questo campo <input type="text" name="sito" id="sito" tabindex="-1" autocomplete="off"></label>
+      </div>
+
+      <!-- SEZIONE 1 -->
+      <section class="step" data-step="1" data-title="Chi sei">
+        <h2 tabindex="-1">Chi sei</h2>
+
+        <fieldset class="q" data-name="q1" data-type="single">
+          <legend>1. Cosa vendi su Vinted?</legend>
+          <label class="opt"><input type="radio" name="q1" value="Solo capi miei"><span>Solo capi miei</span></label>
+          <label class="opt"><input type="radio" name="q1" value="Compro per rivendere"><span>Compro per rivendere</span></label>
+          <label class="opt"><input type="radio" name="q1" value="Entrambi"><span>Entrambi</span></label>
+          <p class="err" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="q" data-name="q2" data-type="single">
+          <legend>2. Quanti articoli vendi in un mese?</legend>
+          <label class="opt"><input type="radio" name="q2" value="Meno di 10"><span>Meno di 10</span></label>
+          <label class="opt"><input type="radio" name="q2" value="10–30"><span>10–30</span></label>
+          <label class="opt"><input type="radio" name="q2" value="30–100"><span>30–100</span></label>
+          <label class="opt"><input type="radio" name="q2" value="Oltre 100"><span>Oltre 100</span></label>
+          <p class="err" role="alert"></p>
+        </fieldset>
+      </section>
+
+      <!-- SEZIONE 2 -->
+      <section class="step" data-step="2" data-title="Fisco" hidden>
+        <h2 tabindex="-1">Fisco</h2>
+
+        <fieldset class="q" data-name="q3" data-type="single">
+          <legend>3. Hai la partita IVA?</legend>
+          <label class="opt"><input type="radio" name="q3" value="Sì"><span>Sì</span></label>
+          <label class="opt"><input type="radio" name="q3" value="No, ma ci sto pensando"><span>No, ma ci sto pensando</span></label>
+          <label class="opt"><input type="radio" name="q3" value="No"><span>No</span></label>
+          <p class="err" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="q" data-name="q4" data-type="single">
+          <legend>4. Conosci le soglie DAC7?</legend>
+          <label class="opt"><input type="radio" name="q4" value="Sì, bene"><span>Sì, bene</span></label>
+          <label class="opt"><input type="radio" name="q4" value="Più o meno"><span>Più o meno</span></label>
+          <label class="opt"><input type="radio" name="q4" value="No"><span>No</span></label>
+          <p class="err" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="q" data-name="q5" data-type="single">
+          <legend>5. Chi si occupa della parte fiscale?</legend>
+          <label class="opt"><input type="radio" name="q5" value="Io"><span>Io</span></label>
+          <label class="opt"><input type="radio" name="q5" value="Un commercialista"><span>Un commercialista</span></label>
+          <label class="opt"><input type="radio" name="q5" value="Nessuno"><span>Nessuno</span></label>
+          <p class="err" role="alert"></p>
+        </fieldset>
+      </section>
+
+      <!-- SEZIONE 3 -->
+      <section class="step" data-step="3" data-title="Tempo" hidden>
+        <h2 tabindex="-1">Tempo</h2>
+
+        <fieldset class="q" data-name="q6" data-type="single">
+          <legend>6. Quanto ti serve per mettere online un capo?</legend>
+          <label class="opt"><input type="radio" name="q6" value="Meno di 5 minuti"><span>Meno di 5 minuti</span></label>
+          <label class="opt"><input type="radio" name="q6" value="5–10 minuti"><span>5–10 minuti</span></label>
+          <label class="opt"><input type="radio" name="q6" value="Più di 10 minuti"><span>Più di 10 minuti</span></label>
+          <p class="err" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="q" data-name="q7" data-type="multi">
+          <legend>7. Cosa ti fa perdere più tempo? <small>Puoi sceglierne più di una</small></legend>
+          <label class="opt multi"><input type="checkbox" name="q7" value="Scrivere gli annunci"><span>Scrivere gli annunci</span></label>
+          <label class="opt multi"><input type="checkbox" name="q7" value="Foto"><span>Foto</span></label>
+          <label class="opt multi"><input type="checkbox" name="q7" value="Spedizioni"><span>Spedizioni</span></label>
+          <label class="opt multi"><input type="checkbox" name="q7" value="Tenere i conti"><span>Tenere i conti</span></label>
+          <label class="opt multi"><input type="checkbox" name="q7" value="Altro" data-other="q7_altro"><span>Altro</span></label>
+          <input class="other" type="text" id="q7_altro" name="q7_altro" maxlength="100" placeholder="Cosa?" hidden>
+          <p class="err" role="alert"></p>
+        </fieldset>
+      </section>
+
+      <!-- SEZIONE 4 -->
+      <section class="step" data-step="4" data-title="Strumenti" hidden>
+        <h2 tabindex="-1">Strumenti</h2>
+
+        <fieldset class="q" data-name="q8" data-type="single">
+          <legend>8. Come tieni i conti?</legend>
+          <label class="opt"><input type="radio" name="q8" value="Excel o Google Fogli"><span>Excel o Google Fogli</span></label>
+          <label class="opt"><input type="radio" name="q8" value="Quaderno o note"><span>Quaderno o note</span></label>
+          <label class="opt"><input type="radio" name="q8" value="Un'app"><span>Un'app</span></label>
+          <label class="opt"><input type="radio" name="q8" value="Non li tengo"><span>Non li tengo</span></label>
+          <p class="err" role="alert"></p>
+        </fieldset>
+      </section>
+
+      <!-- SEZIONE 5 -->
+      <section class="step" data-step="5" data-title="Finale" hidden>
+        <h2 tabindex="-1">Finale</h2>
+
+        <div class="intro">
+          <p>Stiamo creando un gestionale per chi vende su Vinted in Italia, pensato per farti risparmiare tempo e denaro. Ti mostra quanto guadagni davvero su ogni capo, ti aiuta a scrivere le inserzioni e ti prepara i dati per il commercialista. Ti avvisa anche quando ti avvicini alle soglie fiscali, così sai in tempo cosa fare. Tutto senza collegarsi al tuo account Vinted.</p>
+        </div>
+
+        <fieldset class="q" data-name="q9" data-type="multi">
+          <legend>9. Cosa ti sarebbe più utile? <small>Puoi sceglierne più di una</small></legend>
+          <label class="opt multi"><input type="checkbox" name="q9" value="Vedere i margini su ogni capo"><span>Vedere i margini su ogni capo</span></label>
+          <label class="opt multi"><input type="checkbox" name="q9" value="Avvisi quando ti avvicini alle soglie fiscali"><span>Avvisi quando ti avvicini alle soglie fiscali</span></label>
+          <label class="opt multi"><input type="checkbox" name="q9" value="Dati pronti per il commercialista"><span>Dati pronti per il commercialista</span></label>
+          <label class="opt multi"><input type="checkbox" name="q9" value="Annunci scritti con l'AI"><span>Annunci scritti con l'AI</span></label>
+          <p class="err" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="q" data-name="q10" data-type="single">
+          <legend>10. Se fosse disponibile oggi, cosa faresti?</legend>
+          <label class="opt"><input type="radio" name="q10" value="Lo proverei subito"><span>Lo proverei subito</span></label>
+          <label class="opt"><input type="radio" name="q10" value="Vorrei saperne di più"><span>Vorrei saperne di più</span></label>
+          <label class="opt"><input type="radio" name="q10" value="Non mi interessa"><span>Non mi interessa</span></label>
+          <p class="err" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="q" data-name="q11" data-type="email">
+          <legend>11. Vuoi entrare nella lista d'attesa o fare una breve chiacchierata con noi? Lasciaci la tua email. <small>Facoltativa</small></legend>
+          <input class="email" type="email" id="email" name="email" maxlength="120" autocomplete="email" inputmode="email" placeholder="nome@esempio.it">
+          <label class="consent"><input type="checkbox" id="consenso" name="consenso"><span>Acconsento a essere contattato per la lista d'attesa o per una breve intervista</span></label>
+          <p class="err" role="alert"></p>
+          <p class="privacy">
+            <strong>Informativa breve.</strong> I dati sono raccolti dal team di gestionale.vinted, un progetto indipendente. Le risposte al questionario sono anonime. L'email, solo se spunti la casella, la usiamo per scriverti della lista d'attesa o per proporti una breve intervista: mai per altro, e non la diamo a nessuno. È salvata in un foglio Google a cui abbiamo accesso solo noi, e la conserviamo al massimo 12 mesi. Puoi chiederci di vederla, correggerla o cancellarla in qualsiasi momento rispondendo a una nostra email.
+          </p>
+        </fieldset>
+      </section>
+
+      <!-- RINGRAZIAMENTO -->
+      <section class="step thanks" data-step="done" hidden>
+        <h2 tabindex="-1">Grazie mille!</h2>
+        <p>Le tue risposte ci aiutano a capire cosa serve davvero a chi vende online.</p>
+        <p id="thanks-email" hidden>Ti scriveremo all'email che ci hai lasciato, solo per la lista d'attesa o per una breve chiacchierata.</p>
+        <p>Puoi chiudere questa pagina.</p>
+      </section>
+
+      <div class="nav" id="nav">
+        <button type="button" class="btn secondary" id="back" hidden>Indietro</button>
+        <button type="button" class="btn primary" id="next">Avanti</button>
+      </div>
+      <p class="send-err" id="send-err" role="alert" hidden></p>
+    </form>
+
+    <footer class="foot">Progetto indipendente, non affiliato a Vinted.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
