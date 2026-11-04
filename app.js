@@ -8,7 +8,7 @@
 
   // 1) Incolla qui l'indirizzo della web app di Google Apps Script (finisce con /exec).
   //    Finché resta così, la pagina funziona in "modalità prova" e non salva nulla.
-  var SCRIPT_URL = "INCOLLA_QUI_URL_WEB_APP";
+  var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbweNq1fSGnNqWM1B6I-eAtR52x8OxMVPOmHgarkz-VCQ4QAfJW8t6A1wx7FwVZZOZRIgw/exec";
   var VERSIONE = "v1";
 
   var TEST_MODE = SCRIPT_URL.indexOf("https://script.google.com/") !== 0;
