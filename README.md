@@ -60,7 +60,7 @@ Se cambiate un'opzione di risposta, va cambiata **sia in `index.html` sia in `Co
 - L'email si salva solo con la casella del consenso spuntata: lo controllano sia la pagina sia lo script.
 - Se qualcuno chiede la cancellazione: cercate la sua email nel foglio e cancellate la riga, entro un mese.
 - Dopo 12 mesi, o a fine progetto, cancellate la colonna email.
-- Oggi l'informativa non contiene nomi né un indirizzo email di contatto. Quando ci sarà un'email del progetto, va aggiunta all'informativa in `index.html`.
+- Il contatto per la privacy nell'informativa è gstvinted@gmail.com: controllate quella casella, perché le richieste di cancellazione arrivano lì.
 
 ## Leggere le risposte
 
