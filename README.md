@@ -4,7 +4,7 @@ Nov 4, 2026 · @Marco Gargiulo
 
 Una pagina con 11 domande in 5 schermate. Le risposte finiscono in un Google Sheet. Costo zero.
 
-**Come funziona:** la pagina sta su GitHub Pages (repository `gestionale.vinted`). Alla fine manda le risposte a uno script Google (Apps Script), che le controlla e aggiunge una riga al foglio. Nessun cookie, nessun analytics, nessun collegamento a Vinted.
+**Come funziona:** la pagina sta su GitHub Pages (repository `gestionale-vinted/gestionale-vinted.github.io`). Alla fine manda le risposte a uno script Google (Apps Script), che le controlla e aggiunge una riga al foglio. Nessun cookie, nessun analytics, nessun collegamento a Vinted.
 
 ## I file
 
@@ -35,9 +35,9 @@ Le intestazioni del foglio le scrive lo script alla prima risposta. Finché l'UR
 Si aggiunge `?fonte=` con un nome breve, solo lettere minuscole, numeri e trattini:
 
 ```
-https://gargiu999.github.io/gestionale.vinted/?fonte=fb-sneakersitalia
-https://gargiu999.github.io/gestionale.vinted/?fonte=tg-vinteddit
-https://gargiu999.github.io/gestionale.vinted/?fonte=amici
+https://gestionale-vinted.github.io/?fonte=fb-sneakersitalia
+https://gestionale-vinted.github.io/?fonte=tg-vinteddit
+https://gestionale-vinted.github.io/?fonte=amici
 ```
 
 Chi apre il link senza `?fonte=` viene salvato come `diretto`. Tenete l'elenco dei link usati nel foglio dei gruppi (task 17).
