@@ -8,8 +8,8 @@
 
   // 1) Incolla qui l'indirizzo della web app di Google Apps Script (finisce con /exec).
   //    Finché resta così, la pagina funziona in "modalità prova" e non salva nulla.
-  var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbweNq1fSGnNqWM1B6I-eAtR52x8OxMVPOmHgarkz-VCQ4QAfJW8t6A1wx7FwVZZOZRIgw/exec";
-  var VERSIONE = "v1";
+  var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxrBAl6KkCbOZ0l8G9fCk-yoTm-FG6KioUZ4HYmFNlwl-BhRmtzpPfq3IAHhN7pitKGsQ/exec";
+  var VERSIONE = "v2";
 
   var TEST_MODE = SCRIPT_URL.indexOf("https://script.google.com/") !== 0;
   var TOTAL = 5;
@@ -152,15 +152,17 @@
       fonte: FONTE,
       q1: single("q1"),
       q2: single("q2"),
-      q3: single("q3"),
+      q3: joinMulti("q3"),
+      q3_altro: text("q3_altro"),
       q4: single("q4"),
       q5: single("q5"),
       q6: single("q6"),
-      q7: joinMulti("q7"),
-      q7_altro: text("q7_altro"),
-      q8: single("q8"),
-      q9: joinMulti("q9"),
-      q10: single("q10"),
+      q7: single("q7"),
+      q8: joinMulti("q8"),
+      q8_altro: text("q8_altro"),
+      q9: single("q9"),
+      q10: joinMulti("q10"),
+      q11: single("q11"),
       // L'email parte solo se c'è il consenso.
       email: consent ? document.getElementById("email").value.trim().slice(0, 120) : "",
       consenso: consent,

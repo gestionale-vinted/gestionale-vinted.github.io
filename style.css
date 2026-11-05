@@ -94,11 +94,39 @@ body {
 
 .privacy { font-size: 0.8rem; color: var(--muted); margin: 12px 0 0; }
 
-.intro {
-  background: var(--accent-soft); border-radius: var(--radius);
-  padding: 14px 16px; margin-bottom: 16px;
+/* Sezione finale: personaggio + vignetta.
+   Telefono: personaggio piccolo sopra, codina verso l'alto.
+   Schermi larghi: personaggio a sinistra, codina verso sinistra. */
+.pitch { display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; }
+.pitch-char { width: 96px; height: auto; flex: none; }
+.bubble {
+  --b-bg: #fff1c4;
+  --b-line: var(--accent);
+  position: relative; width: 100%;
+  margin-top: 14px; padding: 16px 18px;
+  background: var(--b-bg); color: var(--ink);
+  border: 3px solid var(--b-line); border-radius: 18px;
 }
-.intro p { margin: 0; }
+.bubble p { margin: 0; font-weight: 700; }
+.bubble-title { font-size: 1.25rem; line-height: 1.25; margin-bottom: 8px !important; }
+.bubble-text { font-size: 1rem; }
+/* Codina: un triangolo per il bordo e uno, più piccolo, per il riempimento */
+.bubble::before, .bubble::after {
+  content: ""; position: absolute; left: 50%; width: 0; height: 0;
+  border-style: solid; border-color: transparent;
+}
+.bubble::before { bottom: 100%; margin-left: -14px; border-width: 0 14px 18px; border-bottom-color: var(--b-line); }
+.bubble::after  { bottom: 100%; margin-left: -10px; margin-bottom: -4px; border-width: 0 10px 14px; border-bottom-color: var(--b-bg); }
+
+@media (min-width: 540px) {
+  .pitch { flex-direction: row; align-items: flex-start; }
+  .pitch-char { width: 120px; }
+  .bubble { margin: 8px 0 0 18px; }
+  /* la bocca del personaggio è a circa 48px dall'alto della vignetta */
+  .bubble::before, .bubble::after { left: auto; bottom: auto; margin: 0; }
+  .bubble::before { right: 100%; top: 32px; border-width: 13px 18px 13px 0; border-color: transparent var(--b-line) transparent transparent; }
+  .bubble::after  { right: 100%; top: 36px; margin-right: -4px; border-width: 9px 14px 9px 0; border-color: transparent var(--b-bg) transparent transparent; }
+}
 
 .err { color: var(--error); font-size: 0.9rem; margin: 4px 0 0; min-height: 0; }
 .err:empty { display: none; }

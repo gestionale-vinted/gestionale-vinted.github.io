@@ -46,33 +46,44 @@
           <label class="opt"><input type="radio" name="q2" value="Oltre 100"><span>Oltre 100</span></label>
           <p class="err" role="alert"></p>
         </fieldset>
+
+        <fieldset class="q" data-name="q3" data-type="multi">
+          <legend>3. Dove vendi? <small>Puoi sceglierne più di una</small></legend>
+          <label class="opt multi"><input type="checkbox" name="q3" value="Vinted"><span>Vinted</span></label>
+          <label class="opt multi"><input type="checkbox" name="q3" value="Subito"><span>Subito</span></label>
+          <label class="opt multi"><input type="checkbox" name="q3" value="eBay"><span>eBay</span></label>
+          <label class="opt multi"><input type="checkbox" name="q3" value="Depop"><span>Depop</span></label>
+          <label class="opt multi"><input type="checkbox" name="q3" value="Altro" data-other="q3_altro"><span>Altro</span></label>
+          <input class="other" type="text" id="q3_altro" name="q3_altro" maxlength="100" placeholder="Dove?" hidden>
+          <p class="err" role="alert"></p>
+        </fieldset>
       </section>
 
       <!-- SEZIONE 2 -->
       <section class="step" data-step="2" data-title="Fisco" hidden>
         <h2 tabindex="-1">Fisco</h2>
 
-        <fieldset class="q" data-name="q3" data-type="single">
-          <legend>3. Hai la partita IVA?</legend>
-          <label class="opt"><input type="radio" name="q3" value="Sì"><span>Sì</span></label>
-          <label class="opt"><input type="radio" name="q3" value="No, ma ci sto pensando"><span>No, ma ci sto pensando</span></label>
-          <label class="opt"><input type="radio" name="q3" value="No"><span>No</span></label>
-          <p class="err" role="alert"></p>
-        </fieldset>
-
         <fieldset class="q" data-name="q4" data-type="single">
-          <legend>4. Conosci le soglie DAC7?</legend>
-          <label class="opt"><input type="radio" name="q4" value="Sì, bene"><span>Sì, bene</span></label>
-          <label class="opt"><input type="radio" name="q4" value="Più o meno"><span>Più o meno</span></label>
+          <legend>4. Hai la partita IVA?</legend>
+          <label class="opt"><input type="radio" name="q4" value="Sì"><span>Sì</span></label>
+          <label class="opt"><input type="radio" name="q4" value="No, ma ci sto pensando"><span>No, ma ci sto pensando</span></label>
           <label class="opt"><input type="radio" name="q4" value="No"><span>No</span></label>
           <p class="err" role="alert"></p>
         </fieldset>
 
         <fieldset class="q" data-name="q5" data-type="single">
-          <legend>5. Chi si occupa della parte fiscale?</legend>
-          <label class="opt"><input type="radio" name="q5" value="Io"><span>Io</span></label>
-          <label class="opt"><input type="radio" name="q5" value="Un commercialista"><span>Un commercialista</span></label>
-          <label class="opt"><input type="radio" name="q5" value="Nessuno"><span>Nessuno</span></label>
+          <legend>5. Conosci le soglie DAC7?</legend>
+          <label class="opt"><input type="radio" name="q5" value="Sì, bene"><span>Sì, bene</span></label>
+          <label class="opt"><input type="radio" name="q5" value="Più o meno"><span>Più o meno</span></label>
+          <label class="opt"><input type="radio" name="q5" value="No"><span>No</span></label>
+          <p class="err" role="alert"></p>
+        </fieldset>
+
+        <fieldset class="q" data-name="q6" data-type="single">
+          <legend>6. Chi si occupa della parte fiscale?</legend>
+          <label class="opt"><input type="radio" name="q6" value="Io"><span>Io</span></label>
+          <label class="opt"><input type="radio" name="q6" value="Un commercialista"><span>Un commercialista</span></label>
+          <label class="opt"><input type="radio" name="q6" value="Nessuno"><span>Nessuno</span></label>
           <p class="err" role="alert"></p>
         </fieldset>
       </section>
@@ -81,22 +92,22 @@
       <section class="step" data-step="3" data-title="Tempo" hidden>
         <h2 tabindex="-1">Tempo</h2>
 
-        <fieldset class="q" data-name="q6" data-type="single">
-          <legend>6. Quanto ti serve per mettere online un capo?</legend>
-          <label class="opt"><input type="radio" name="q6" value="Meno di 5 minuti"><span>Meno di 5 minuti</span></label>
-          <label class="opt"><input type="radio" name="q6" value="5–10 minuti"><span>5–10 minuti</span></label>
-          <label class="opt"><input type="radio" name="q6" value="Più di 10 minuti"><span>Più di 10 minuti</span></label>
+        <fieldset class="q" data-name="q7" data-type="single">
+          <legend>7. Quanto ti serve per mettere online un capo?</legend>
+          <label class="opt"><input type="radio" name="q7" value="Meno di 5 minuti"><span>Meno di 5 minuti</span></label>
+          <label class="opt"><input type="radio" name="q7" value="5–10 minuti"><span>5–10 minuti</span></label>
+          <label class="opt"><input type="radio" name="q7" value="Più di 10 minuti"><span>Più di 10 minuti</span></label>
           <p class="err" role="alert"></p>
         </fieldset>
 
-        <fieldset class="q" data-name="q7" data-type="multi">
-          <legend>7. Cosa ti fa perdere più tempo? <small>Puoi sceglierne più di una</small></legend>
-          <label class="opt multi"><input type="checkbox" name="q7" value="Scrivere gli annunci"><span>Scrivere gli annunci</span></label>
-          <label class="opt multi"><input type="checkbox" name="q7" value="Foto"><span>Foto</span></label>
-          <label class="opt multi"><input type="checkbox" name="q7" value="Spedizioni"><span>Spedizioni</span></label>
-          <label class="opt multi"><input type="checkbox" name="q7" value="Tenere i conti"><span>Tenere i conti</span></label>
-          <label class="opt multi"><input type="checkbox" name="q7" value="Altro" data-other="q7_altro"><span>Altro</span></label>
-          <input class="other" type="text" id="q7_altro" name="q7_altro" maxlength="100" placeholder="Cosa?" hidden>
+        <fieldset class="q" data-name="q8" data-type="multi">
+          <legend>8. Cosa ti fa perdere più tempo? <small>Puoi sceglierne più di una</small></legend>
+          <label class="opt multi"><input type="checkbox" name="q8" value="Scrivere gli annunci"><span>Scrivere gli annunci</span></label>
+          <label class="opt multi"><input type="checkbox" name="q8" value="Foto"><span>Foto</span></label>
+          <label class="opt multi"><input type="checkbox" name="q8" value="Conto per dichiarazione dei redditi (commercialista)"><span>Conto per dichiarazione dei redditi (commercialista)</span></label>
+          <label class="opt multi"><input type="checkbox" name="q8" value="Tenere i conti"><span>Tenere i conti</span></label>
+          <label class="opt multi"><input type="checkbox" name="q8" value="Altro" data-other="q8_altro"><span>Altro</span></label>
+          <input class="other" type="text" id="q8_altro" name="q8_altro" maxlength="100" placeholder="Cosa?" hidden>
           <p class="err" role="alert"></p>
         </fieldset>
       </section>
@@ -105,12 +116,12 @@
       <section class="step" data-step="4" data-title="Strumenti" hidden>
         <h2 tabindex="-1">Strumenti</h2>
 
-        <fieldset class="q" data-name="q8" data-type="single">
-          <legend>8. Come tieni i conti?</legend>
-          <label class="opt"><input type="radio" name="q8" value="Excel o Google Fogli"><span>Excel o Google Fogli</span></label>
-          <label class="opt"><input type="radio" name="q8" value="Quaderno o note"><span>Quaderno o note</span></label>
-          <label class="opt"><input type="radio" name="q8" value="Un'app"><span>Un'app</span></label>
-          <label class="opt"><input type="radio" name="q8" value="Non li tengo"><span>Non li tengo</span></label>
+        <fieldset class="q" data-name="q9" data-type="single">
+          <legend>9. Come tieni i conti?</legend>
+          <label class="opt"><input type="radio" name="q9" value="Excel o Google Fogli"><span>Excel o Google Fogli</span></label>
+          <label class="opt"><input type="radio" name="q9" value="Quaderno o note"><span>Quaderno o note</span></label>
+          <label class="opt"><input type="radio" name="q9" value="Un'app"><span>Un'app</span></label>
+          <label class="opt"><input type="radio" name="q9" value="Non li tengo"><span>Non li tengo</span></label>
           <p class="err" role="alert"></p>
         </fieldset>
       </section>
@@ -119,29 +130,66 @@
       <section class="step" data-step="5" data-title="Finale" hidden>
         <h2 tabindex="-1">Finale</h2>
 
-        <div class="intro">
-          <p>Stiamo creando un gestionale per chi vende su Vinted in Italia, pensato per farti risparmiare tempo e denaro. Ti mostra quanto guadagni davvero su ogni capo, ti aiuta a scrivere le inserzioni e ti prepara i dati per il commercialista. Ti avvisa anche quando ti avvicini alle soglie fiscali, così sai in tempo cosa fare. Tutto senza collegarsi al tuo account Vinted.</p>
+        <!-- Personaggio + vignetta. Il disegno è decorativo (aria-hidden): il testo resta nella vignetta. -->
+        <div class="pitch">
+          <svg class="pitch-char" viewBox="0 0 160 210" aria-hidden="true" focusable="false">
+            <ellipse cx="80" cy="201" rx="46" ry="5" fill="#1f2430" opacity="0.08"/>
+            <!-- gambe e scarpe -->
+            <rect x="58" y="152" width="18" height="42" rx="6" fill="#2f3b78"/>
+            <rect x="84" y="152" width="18" height="42" rx="6" fill="#2f3b78"/>
+            <ellipse cx="65" cy="196" rx="13" ry="6" fill="#1f2430"/>
+            <ellipse cx="95" cy="196" rx="13" ry="6" fill="#1f2430"/>
+            <!-- busto -->
+            <rect x="50" y="92" width="60" height="70" rx="22" fill="#e8664f"/>
+            <!-- braccio sinistro con la maglia appesa -->
+            <path d="M56 104 Q42 122 40 148" stroke="#e8664f" stroke-width="14" stroke-linecap="round" fill="none"/>
+            <path d="M24 118 Q40 110 56 118 L58 150 Q51 145 47 156 Q41 147 35 156 Q31 145 22 150 Z" fill="#f2b632"/>
+            <path d="M27 130 Q40 125 54 130" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.7"/>
+            <circle cx="40" cy="157" r="7" fill="#e9b48f"/>
+            <!-- braccio destro e scatola da spedire -->
+            <path d="M104 104 Q118 118 128 134" stroke="#e8664f" stroke-width="14" stroke-linecap="round" fill="none"/>
+            <rect x="84" y="120" width="58" height="44" rx="4" fill="#c98f55"/>
+            <rect x="84" y="120" width="58" height="8" rx="3" fill="#b57c45"/>
+            <rect x="107" y="120" width="12" height="44" fill="#ecd5a6"/>
+            <circle cx="136" cy="141" r="7" fill="#e9b48f"/>
+            <!-- collo e testa -->
+            <rect x="73" y="80" width="14" height="16" rx="5" fill="#e9b48f"/>
+            <circle cx="53" cy="62" r="5" fill="#e9b48f"/>
+            <circle cx="107" cy="62" r="5" fill="#e9b48f"/>
+            <circle cx="80" cy="60" r="27" fill="#e9b48f"/>
+            <path d="M52 60 C50 36 65 27 82 28 C99 29 110 40 108 60 C103 49 94 43 84 44 C78 50 66 52 52 60 Z" fill="#3a2a24"/>
+            <!-- viso -->
+            <circle cx="70" cy="62" r="2.8" fill="#1f2430"/>
+            <circle cx="90" cy="62" r="2.8" fill="#1f2430"/>
+            <circle cx="64" cy="71" r="4" fill="#f19a86" opacity="0.6"/>
+            <circle cx="96" cy="71" r="4" fill="#f19a86" opacity="0.6"/>
+            <path d="M73 73 Q80 80 87 73" stroke="#1f2430" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          </svg>
+          <div class="bubble">
+            <p class="bubble-title">Vendi su Vinted? Scopri quanto guadagni davvero.</p>
+            <p class="bubble-text">Stiamo creando un gestionale pensato per chi vende su Vinted in Italia. Ti mostra il guadagno reale su ogni capo, ti avvisa prima di superare le soglie fiscali, ti aiuta a scrivere le inserzioni e ti prepara i dati per il commercialista. Meno tempo perso, zero sorprese con il fisco.</p>
+          </div>
         </div>
 
-        <fieldset class="q" data-name="q9" data-type="multi">
-          <legend>9. Cosa ti sarebbe più utile? <small>Puoi sceglierne più di una</small></legend>
-          <label class="opt multi"><input type="checkbox" name="q9" value="Vedere i margini su ogni capo"><span>Vedere i margini su ogni capo</span></label>
-          <label class="opt multi"><input type="checkbox" name="q9" value="Avvisi quando ti avvicini alle soglie fiscali"><span>Avvisi quando ti avvicini alle soglie fiscali</span></label>
-          <label class="opt multi"><input type="checkbox" name="q9" value="Dati pronti per il commercialista"><span>Dati pronti per il commercialista</span></label>
-          <label class="opt multi"><input type="checkbox" name="q9" value="Annunci scritti con l'AI"><span>Annunci scritti con l'AI</span></label>
+        <fieldset class="q" data-name="q10" data-type="multi">
+          <legend>10. Cosa ti sarebbe più utile? <small>Puoi sceglierne più di una</small></legend>
+          <label class="opt multi"><input type="checkbox" name="q10" value="Vedere i margini su ogni capo"><span>Vedere i margini su ogni capo</span></label>
+          <label class="opt multi"><input type="checkbox" name="q10" value="Avvisi sulle soglie fiscali"><span>Avvisi sulle soglie fiscali</span></label>
+          <label class="opt multi"><input type="checkbox" name="q10" value="Dati pronti per il commercialista"><span>Dati pronti per il commercialista</span></label>
+          <label class="opt multi"><input type="checkbox" name="q10" value="Annunci scritti con l'AI"><span>Annunci scritti con l'AI</span></label>
           <p class="err" role="alert"></p>
         </fieldset>
 
-        <fieldset class="q" data-name="q10" data-type="single">
-          <legend>10. Se fosse disponibile oggi, cosa faresti?</legend>
-          <label class="opt"><input type="radio" name="q10" value="Lo proverei subito"><span>Lo proverei subito</span></label>
-          <label class="opt"><input type="radio" name="q10" value="Vorrei saperne di più"><span>Vorrei saperne di più</span></label>
-          <label class="opt"><input type="radio" name="q10" value="Non mi interessa"><span>Non mi interessa</span></label>
+        <fieldset class="q" data-name="q11" data-type="single">
+          <legend>11. Lo proveresti?</legend>
+          <label class="opt"><input type="radio" name="q11" value="Sì"><span>Sì</span></label>
+          <label class="opt"><input type="radio" name="q11" value="Forse"><span>Forse</span></label>
+          <label class="opt"><input type="radio" name="q11" value="No"><span>No</span></label>
           <p class="err" role="alert"></p>
         </fieldset>
 
-        <fieldset class="q" data-name="q11" data-type="email">
-          <legend>11. Vuoi entrare nella lista d'attesa o fare una breve chiacchierata con noi? Lasciaci la tua email. <small>Facoltativa</small></legend>
+        <fieldset class="q" data-name="q12" data-type="email">
+          <legend>12. Vuoi entrare nella lista d'attesa o fare una breve chiacchierata con noi? Lasciaci la tua email. <small>Facoltativa</small></legend>
           <input class="email" type="email" id="email" name="email" maxlength="120" autocomplete="email" inputmode="email" placeholder="nome@esempio.it">
           <label class="consent"><input type="checkbox" id="consenso" name="consenso"><span>Acconsento a essere contattato per la lista d'attesa o per una breve intervista</span></label>
           <p class="err" role="alert"></p>
