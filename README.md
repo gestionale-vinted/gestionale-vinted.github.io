@@ -13,7 +13,12 @@ Una pagina con 12 domande in 5 schermate (versione v2, dal 5 novembre 2026). Le 
 | `index.html` | Le domande e le schermate |
 | `style.css` | La grafica |
 | `app.js` | Avanzamento, controlli, invio. Contiene `SCRIPT_URL`, l'indirizzo dello script Google |
+| `personaggio-questionario.webp` | Il personaggio della schermata finale, accanto alla vignetta. Va caricato insieme agli altri file |
 | `apps-script/Codice.gs` | Lo script che salva le risposte: si incolla in Google, non gira su GitHub |
+
+## Aggiornamento grafica finale (6 novembre 2026)
+
+La schermata finale ora usa l'immagine del personaggio e una nuova vignetta: bianca, bordo rosso mattone, codina che punta verso il viso, piccola animazione all'apertura. Domande, script Google e foglio **non cambiano**. Per metterla online basta caricare sul repository 4 file: `index.html`, `style.css`, `app.js`, `personaggio-questionario.webp` (**Add file → Upload files → Commit changes**).
 
 ## L'unica parte da fare a mano: lo script Google (5 minuti)
 

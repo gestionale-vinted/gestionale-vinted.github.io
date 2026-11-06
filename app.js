@@ -56,10 +56,23 @@
       backBtn.hidden = n === 1;
       nextBtn.textContent = n === TOTAL ? "Invia" : "Avanti";
     }
+    if (n === TOTAL) popBubble();
     sendErr.hidden = true;
     window.scrollTo(0, 0);
     var h = el.querySelector("h2");
     if (h) h.focus({ preventScroll: true });
+  }
+
+  // Animazione "pop" della vignetta: solo la prima volta che si apre la schermata finale.
+  // Tolgo la classe a fine animazione, altrimenti tornando indietro e avanti ripartirebbe.
+  var popped = false;
+  function popBubble() {
+    if (popped) return;
+    popped = true;
+    var pitch = document.getElementById("pitch");
+    if (!pitch) return;
+    pitch.classList.add("pop");
+    pitch.addEventListener("animationend", function () { pitch.classList.remove("pop"); }, { once: true });
   }
 
   // Mostra/nasconde il campo "Altro"
